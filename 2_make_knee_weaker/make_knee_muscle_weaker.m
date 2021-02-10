@@ -46,7 +46,7 @@ for nm = 0:muscles.getSize()-1
         % weaker
         if strcmp(cur_joint, joint_of_interest)
            
-            disp([cur_mus_name, ' crosses the knee_l. Making it weaker.']);
+            disp([cur_mus_name, ' crosses the knee_l. Reducing max isometric force by ',num2str((1-strength_ratio)*100),'%.']);
            
            % assign a new max isometric force
            cur_mus.setMaxIsometricForce(cur_mus.getMaxIsometricForce * strength_ratio);

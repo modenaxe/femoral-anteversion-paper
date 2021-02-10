@@ -13,6 +13,7 @@
 *.asv
 
 # folders
+Geometry
 __*
 /_old
 bone_datasets/
