@@ -1,0 +1,3 @@
+[submodule "msk_bone_deformation"]
+	path = msk_bone_deformation
+	url = https://github.com/modenaxe/msk_bone_deformation
