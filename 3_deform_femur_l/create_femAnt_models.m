@@ -13,7 +13,6 @@ import org.opensim.modeling.*
 
 %---------------  MAIN SETTINGS -----------
 % Model to deform
-% ModelFileName = './test_models/gait2392_simbody.osim';
 modelFileName = '../2_make_knee_weaker/GC5.osim';
 
 % where the bone geometries are stored
@@ -64,16 +63,12 @@ for cur_fem_ant_angle = fem_ant_angle_set
     LengthProfilePoints = [ Pprox; Pdist];
     
     % compute torsion profile
-    [torsion_angle_func_rad, torsion_doc_string]= createTorsionProfile(LengthProfilePoints, TorsionProfilePointsDeg, torsionAxis);
+    [torsion_angle_func_rad, ~]= createTorsionProfile(LengthProfilePoints, TorsionProfilePointsDeg, torsionAxis);
     
     % torsion string that takes into account of the offset of the nominal
     % model
     torsion_doc_string = ['_FemAntev', num2str(TorsionProfilePointsDeg(1)+femAntNominalModel),'Deg'];
-    
-    % suffix used for saving geometries
-    bone_short = bone_to_deform([1:3,end-1:end]);
-    deformed_model_suffix = ['_Tors',upper(bone_short(1)),bone_short(2:end),torsion_doc_string];
-    
+
     % if you want you can apply torsion to joints
     if strcmp(apply_torsion_to_joints, 'yes')
         osimModel = applyTorsionToJoints(osimModel, bone_to_deform, torsionAxis, torsion_angle_func_rad);
@@ -89,9 +84,9 @@ for cur_fem_ant_angle = fem_ant_angle_set
     osimModel = applyTorsionToVTPBoneGeom(osimModel, bone_to_deform, torsionAxis, torsion_angle_func_rad, torsion_doc_string, OSGeometry_folder);
     
     % save output model
-    deformed_model_name = [name, deformed_model_suffix,ext];
+    deformed_model_name = [name, torsion_doc_string,ext];
     output_model_path = fullfile(altered_models_folder, deformed_model_name);
-    osimModel.setName([char(osimModel.getName()),deformed_model_suffix]);
+    osimModel.setName([char(osimModel.getName()),torsion_doc_string]);
     
     % save model
     saveDeformedModel(osimModel, output_model_path);
