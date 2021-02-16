@@ -24,7 +24,7 @@ subj_set = {'GC5_FemAntev-2Deg',...
 mat_summary_folder =  './Results_Mat_Summaries';
 
 % folder where to save figures
-figure_folder = './Figures';
+figure_folder = './Figure_2';
 
 % axis labels
 AxisFontSize = 16; 
