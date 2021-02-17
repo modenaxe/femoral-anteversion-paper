@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <ExternalLoads name="Ex2">
+      <objects>
+         <ExternalForce name="GRF1">
+            <isDisabled>false</isDisabled>
+            <applied_to_body>calcn_l</applied_to_body>
+            <force_expressed_in_body>ground</force_expressed_in_body>
+            <point_expressed_in_body>ground</point_expressed_in_body>
+            <force_identifier>1_ground_force_v</force_identifier>
+            <point_identifier>1_ground_force_p</point_identifier>
+            <torque_identifier>1_ground_torque</torque_identifier>
+            <data_source_name>Unassigned</data_source_name>
+         </ExternalForce>
+         <ExternalForce name="GRF2">
+            <isDisabled>false</isDisabled>
+            <applied_to_body>ground</applied_to_body>
+            <force_expressed_in_body>ground</force_expressed_in_body>
+            <point_expressed_in_body>ground</point_expressed_in_body>
+            <force_identifier>2_ground_force_v</force_identifier>
+            <point_identifier>2_ground_force_p</point_identifier>
+            <torque_identifier>2_ground_torque</torque_identifier>
+            <data_source_name>Unassigned</data_source_name>
+         </ExternalForce>
+         <ExternalForce name="GRF3">
+            <isDisabled>false</isDisabled>
+            <applied_to_body>ground</applied_to_body>
+            <force_expressed_in_body>ground</force_expressed_in_body>
+            <point_expressed_in_body>ground</point_expressed_in_body>
+            <force_identifier>3_ground_force_v</force_identifier>
+            <point_identifier>3_ground_force_p</point_identifier>
+            <torque_identifier>3_ground_torque</torque_identifier>
+            <data_source_name>Unassigned</data_source_name>
+         </ExternalForce>
+      </objects>
+      <groups/>
+      <datafile>D:\Dropbox\MATLAB\femoral_anteversion_paper\4_run_simulations\Dataset\GC5_FemAntev5Deg\External Loads\PS_ngait_og_ss1_kinetics.mot</datafile>
+      <external_loads_model_kinematics_file>D:\Dropbox\MATLAB\femoral_anteversion_paper\4_run_simulations\Dataset\GC5_FemAntev5Deg\IK\PS_ngait_og_ss1_kinematics.mot</external_loads_model_kinematics_file>
+      <lowpass_cutoff_frequency_for_load_kinematics>6</lowpass_cutoff_frequency_for_load_kinematics>
+   </ExternalLoads>
+</OpenSimDocument>
