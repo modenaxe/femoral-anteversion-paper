@@ -21,6 +21,27 @@ In our manuscript:
 * We investigated how the joint reaction forces in a musculoskeletal model of the lower limb change when the femoral anteversion of that model is modified.
 * We assessed the results of our simulations against the in vivo measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5. 
 
+# Requirements and setup
+
+In order to take full advantage of the content of this repository you will need to:
+1. download [OpenSim 3.3](https://simtk.org/projects/opensim). Go to the `Download` page of the provided link and click on `Previous releases`, as shown in [this screenshot](https://github.com/modenaxe/3d-muscles/blob/master/images/get_osim3.3.PNG).
+2. have MATLAB installed in your machine. The analyses of the paper were performed using version R2020a.
+3. set up the OpenSim 3.3 API. Required to run the provided scripts. Please refer to the OpenSim [documentation](https://simtk-confluence.stanford.edu/display/OpenSim/Scripting+with+Matlab).
+4. (optional) [NMSBuilder](http://www.nmsbuilder.org). NMSBuilder can be used to visualize how the femoral anteversion was estimated in the femoral geometries of the baseline model and in the segmented femur of the GC5 patient.
+6. clone this repository together with the STAPLE submodule using the following command on git:
+```bash
+git clone --recursive https://github.com/modenaxe/auto-lowerlimb-models-paper.git
+```
+or if you have cloned it without the recursive option please refer to [this post](https://stackoverflow.com/questions/25200231/cloning-a-git-repo-with-all-submodules) and use:
+```bash
+git submodule init
+git submodule update
+```
+
+# Resources included in this repository
+This repository includes:
+1. 
+
 # Available MATLAB scripts
 
 The provided MATLAB scripts allow the reader to reproduce the results and figures included in the manuscript. The most relevant scripts are described in the following table:
