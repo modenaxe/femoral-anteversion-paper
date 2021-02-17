@@ -1,6 +1,7 @@
-%                                                                         %
-%    Author:   Luca Modenese,  2017                                       %
-%    email:    l.modenese@sheffield.ac.uk                                 %
+%-------------------------------------------------------------------------%
+%    Copyright (c) 2021 Modenese L.                                       %
+%    Author:   Luca Modenese,  2021                                       %
+%    email:    l.modenese@imperial.ac.uk                                  %
 % ----------------------------------------------------------------------- %
 clear;clc; fclose all;close all;
 % add functions
@@ -178,11 +179,13 @@ std_error_peak2 = std(abs_error_peak2,0,2);
 
 % table of results
 col_var = {'FemAntev-2'; 'FemAntev+5'; 'FemAntev+12 (nominal)'; 'FemAntev+19'; 'FemAntev+26'; 'FemAntev+33'; 'FemAntev+40'};
-variation_table = table(col_var, mean_hip_var, std_hip_var, mean_knee_var, std_knee_var, mean_ankle_var, std_ankle_var,...
+results_table = table(col_var, mean_hip_var, std_hip_var, mean_knee_var, std_knee_var, mean_ankle_var, std_ankle_var,...
                         mean_error_peak1,  std_error_peak1, mean_error_peak2, std_error_peak2, mean_RMSE, std_RMSE, mean_rsq, std_rsq, mean_corr_coeff, std_corr_coeff, ...
                    'VariableNames',{'Femoral Anteversion Angle', 'Mean var (HIP) [%]', 'STD hip','Mean var (KNEE) [%]', 'STD knee', 'Mean var (ANKLE) [%]', 'STD ankle',...
                    'Mean Error Peak1 [BW]', 'STD Error Peak1 [BW]', 'Mean Error Peak2 [BW]','STD Error Peak2 [BW]','Mean RMSE [BW]', 'STD RMSE [BW]','MEAN R^2','STD R^2','Mean corr coeff', 'STD corr coeff'});
 
-disp(variation_table)
+ % show it
+disp(results_table)
 
-writetable(variation_table, 'table_results.xls')
+% saving table
+writetable(results_table, 'table_results.xls')

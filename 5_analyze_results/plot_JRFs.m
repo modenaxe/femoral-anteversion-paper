@@ -1,6 +1,7 @@
-%                                                                         %
-%    Author:   Luca Modenese,  2017                                       %
-%    email:    l.modenese@sheffield.ac.uk                                 %
+%-------------------------------------------------------------------------%
+%    Copyright (c) 2021 Modenese L.                                       %
+%    Author:   Luca Modenese,  2021                                       %
+%    email:    l.modenese@imperial.ac.uk                                  %
 % ----------------------------------------------------------------------- %
 clear;clc; fclose all;close all;
 % add functions
