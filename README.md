@@ -14,9 +14,16 @@ This repository contains the data, models and the MATLAB scripts to inspect and 
 ```
 The paper is available [as preprint - LINK TO BE ADDED]().
 
+# Brief summary of the publication
+
+In our manuscript: 
+* We presented a MATLAB tool for applying torsional profiles to the bones of generic musculoskeletal models in OpenSim format. This tool is openly developed [at this link](https://github.com/modenaxe/msk_bone_deformation).
+* We investigated how the joint reaction forces in a musculoskeletal model of the lower limb change when the femoral anteversion of that model is modified.
+* We assessed the results of our simulations against the in vivo measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5. 
 
 # Available MATLAB scripts
-The provided MATLAB scripts produce the results described in the following table:
+
+The provided MATLAB scripts allow the reader to reproduce the results and figures included in the manuscript. The most relevant scripts are described in the following table:
 
 | Script name | Script action | Related item in the manuscript|
 | --- | --- | --- |
@@ -27,5 +34,5 @@ The provided MATLAB scripts produce the results described in the following table
 | `plot_JRFs.m` | plots the joint reaction forces obtained from simulations with models having different femoral anteversion. | Figure 2. |
 | `analyze_JRFs.m` | runs basic analyses on the joint reaction forces resulting from the simulations. | Table 1 |
 
-Other MATLAB scripts are provided in the `support_functions` and `support_functions_plot` folders, but the user is not supposed to interact with them.
+Other MATLAB scripts included in the repository are dependencies of these main scripts.
 
