@@ -59,7 +59,8 @@ Other MATLAB scripts included in the repository are dependencies of these main s
 
 # Limitations and notes about reproducibility
 
-* All input and output files required to setup the simulations are provided, but not the workflow employed for running the simulations.
+* All input, output and setup files required to run the simulations are provided, but not the workflow employed for running the simulations.
+* Using the setup files might require adjusting the input/output folders to your local setup.
 
 # Future work
 
