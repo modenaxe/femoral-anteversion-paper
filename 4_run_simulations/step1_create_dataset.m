@@ -11,7 +11,10 @@ clear;clc; fclose all;close all;
 % settings
 take_model_from_folder = '../3_deform_femur_l';
 template_IK_Tasks_file = 'database_IK_Tasks.xml';
-c3d_folder = 'c3d';
+c3d_folder = './Common_inputs/c3d';
+trc_folder = './Common_inputs/trc';
+IK_folder = './Common_inputs/IK';
+ExtLoads_folder = './Common_inputs/External Loads';
 copy_to_folder = './Dataset';
 
 model_list = dir([take_model_from_folder,filesep,'*.osim']);
@@ -34,11 +37,25 @@ for n_p = 1:length(model_list)
     copyfile(template_IK_Tasks_file, copy_IK_Tasks_file,'f');
     disp('* IK tasks copied');
     
-    % copy c3d folder
-    copy_c3d_folder = fullfile(copy_to_folder,model_name,c3d_folder);
+    % copy trc folder
+    copy_c3d_folder = fullfile(copy_to_folder,model_name,'c3d');
     copyfile(c3d_folder, copy_c3d_folder);
     disp('* raw c3d copied');
     
+    % copy trc folder
+    copy_trc_folder = fullfile(copy_to_folder,model_name,'trc');
+    copyfile(trc_folder, copy_trc_folder);
+    disp('* trc folder copied');
+    
+    % copy IK folder
+    copy_IK_folder = fullfile(copy_to_folder,model_name,'IK');
+    copyfile(IK_folder, copy_IK_folder);
+    disp('* IK folder copied');
+    
+    % copy Ext Load folder
+    copy_ExtLoads_folder = fullfile(copy_to_folder,model_name,'External Loads');
+    copyfile(ExtLoads_folder, copy_ExtLoads_folder);
+    disp('* External Loads folde copied');
     disp('------------------------------------------')
     
 end
