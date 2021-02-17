@@ -1,5 +1,19 @@
-# femoral_anteversion_paper
-repository for sharing the simulations for a paper investigating the effect of femoral anteversion on the joint reactions of the lower limb
+# Overview
+
+This repository contains the data, models and the MATLAB scripts to inspect and reproduce the results of the following publication:
+
+```bibtex
+@article{Modenese2021bonedef,
+  title={Dependency of Lower Limb Joint Reaction Forces on Femoral Anteversion},
+  author={Luca Modenese, Martina Barzan and Christopher P. Carty},
+  journal={Gait & Posture},
+  volume = {submitted},
+  year={2021},
+  keywords = {Anteversion, Musculoskeletal modeling, Tibiofemoral contact force, Knee Loading, Femur, Walking}
+}
+```
+The paper is available [as preprint - LINK TO BE ADDED]().
+
 
 # Available MATLAB scripts
 The provided MATLAB scripts produce the results described in the following table:
