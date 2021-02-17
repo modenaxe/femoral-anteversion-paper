@@ -57,3 +57,10 @@ The provided MATLAB scripts allow the reader to reproduce the results and figure
 
 Other MATLAB scripts included in the repository are dependencies of these main scripts.
 
+# Limitations and notes about reproducibility
+
+* All input and output files required to setup the simulations are provided, but not the workflow employed for running the simulations.
+
+# Future work
+
+* Upgrade scripts to openSim 4.x.
