@@ -1,3 +1,12 @@
+- [Overview](#overview)
+- [Brief summary of the publication](#brief-summary-of-the-publication)
+- [Requirements and setup](#requirements-and-setup)
+- [Resources included in this repository](#resources-included-in-this-repository)
+- [Available MATLAB scripts](#available-matlab-scripts)
+- [Limitations and notes about reproducibility](#limitations-and-notes-about-reproducibility)
+- [Future work](#future-work)
+
+
 # Overview
 
 This repository contains the data, models and the MATLAB scripts to inspect and reproduce the results of the following publication:
@@ -20,6 +29,8 @@ In our manuscript:
 * We presented a MATLAB tool for applying torsional profiles to the bones of generic musculoskeletal models in OpenSim format. This tool is openly developed [at this link](https://github.com/modenaxe/msk_bone_deformation).
 * We investigated how the joint reaction forces in a musculoskeletal model of the lower limb change when the femoral anteversion of that model is modified.
 * We assessed the results of our simulations against the in vivo measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5. 
+
+![paper_overview](/images/paper_results.png)
 
 # Requirements and setup
 
