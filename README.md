@@ -30,7 +30,7 @@ The paper is available [as preprint](/preprint).
 In our manuscript: 
 * We presented a MATLAB tool for applying torsional profiles to the bones of generic musculoskeletal models in OpenSim format. This tool is openly developed [at this link](https://github.com/modenaxe/msk_bone_deformation).
 * We investigated how the joint reaction forces in a musculoskeletal model of the lower limb change when the femoral anteversion of that model is modified.
-* We assessed the results of our simulations against the in vivo measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5. 
+* We assessed the results of our simulations against the in vivo measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5. </br>
 
 ![paper_overview](/images/paper_results.png)
 
