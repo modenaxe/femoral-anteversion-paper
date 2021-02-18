@@ -1,3 +1,5 @@
+# Table of contents <!-- omit in toc -->
+
 - [Overview](#overview)
 - [Brief summary of the publication](#brief-summary-of-the-publication)
 - [Requirements and setup](#requirements-and-setup)
