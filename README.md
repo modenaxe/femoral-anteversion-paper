@@ -23,7 +23,7 @@ This repository contains the data, models and the MATLAB scripts to inspect and 
   keywords = {Anteversion, Musculoskeletal modeling, Tibiofemoral contact force, Knee Loading, Femur, Walking}
 }
 ```
-The paper is available [as preprint - LINK TO BE ADDED]().
+The paper is available [as preprint](/preprint).
 
 # Brief summary of the publication
 
