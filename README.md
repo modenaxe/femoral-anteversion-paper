@@ -40,7 +40,20 @@ git submodule update
 
 # Resources included in this repository
 This repository includes:
-1. 
+1. [`1_scale_model` folder](/1_scale_model):aA [full-body OpenSim model](https://simtk.org/projects/full_body/) that was reduced removing the arms and scaled to the anthropometrics of the fifth patient of the [Grand Challenge Competition to Predict In Vivo Knee Loads](https://simtk.org/projects/kneeloads).
+2. [`2_make_knee_weaker` folder](/2_make_knee_weaker): scripts to make the knee crossing the knee joint weaker by 40%. `GC5.osim` is the model resulting from this operation, which is referred to as the _baseline model_ in the manuscript.
+3. [`3_deform_femur_l` folder](/3_deform_femur_l): script that generates models applying a femoral anteversion ranging from 2 degrees retroversion to 40 degrees anteversion. These are referred to as _modified models_ in the manuscript. The scripts depends on the [bone-deformation tool](https://github.com/modenaxe/msk_bone_deformation) that we have released with this publication. The bone geometries produced by the tool are available in the [Geometry folder](/3_deform_femur_l/Geometry/) for model visualization.
+4. [`4_run_simulations` folder](/4_run_simulations): contains all the results from the simulations run for this publication. Please note that some input files are common to simulations with all models, so they were stored in the `Common inputs` folder. These common inputs are: 
+      * raw motion capture files (`c3d` folder, copied  from the [Grand Challenge website](https://simtk.org/projects/kneeloads),
+      * marker files (`trc` folder) ,
+      * joint kinematics (`IK` folder), 
+      * ground reaction forces (`External Loads` folder). 
+ The `Dataset` folder then contains a folder for each model, e.g. `GC5_FemAntev19Deg`, and each folder includes:
+      * muscle forces and activations estimated by static optimization (`SO` subfolder),
+      * joint reactions (`JR` subfolder)
+      * matlab files collecting all the simulation results (`Mat_summary` subfolder)
+
+5. 
 
 # Available MATLAB scripts
 
