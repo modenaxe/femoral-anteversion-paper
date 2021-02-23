@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/337821512.svg)](https://zenodo.org/badge/latestdoi/337821512)
+
 # Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
