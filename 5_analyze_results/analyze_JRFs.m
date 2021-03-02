@@ -129,6 +129,8 @@ std_rsq = std(rsq,0,2);
 % how much are the peaks varying?
 % percent_var = (second_peaks_sims-second_peaks_sims(ref_ind,:,:))./second_peaks_sims(ref_ind,:,:)*100;
 % percent_var = (first_peaks_sims-first_peaks_sims(ref_ind,:,:))./first_peaks_sims(ref_ind,:,:)*100;
+
+% ref_ind is the index of the baseline model
 percent_peak_var = (peak_sims-peak_sims(ref_ind,:,:))./peak_sims(ref_ind,:,:)*100;
 
 % check the % variations on single joints
@@ -137,11 +139,11 @@ knee_peak_var = percent_peak_var(:,:,2);
 ankle_peak_var = percent_peak_var(:,:,3);
 
 % mean and std
-mean_hip_var = mean(hip_peak_var, 2);  std_hip_var = std(hip_peak_var, 0, 2);
-mean_knee_var = mean(knee_peak_var, 2);  std_knee_var = std(knee_peak_var, 0, 2);
+mean_hip_var = mean(hip_peak_var, 2);      std_hip_var = std(hip_peak_var, 0, 2);
+mean_knee_var = mean(knee_peak_var, 2);    std_knee_var = std(knee_peak_var, 0, 2);
 mean_ankle_var = mean(ankle_peak_var, 2);  std_ankle_var = std(ankle_peak_var, 0, 2);
 
-%% comparison against eTibia
+%% comparison against eTibia measurements
 % peak splitters
 peak1_split = 35;
 peak2_split = 45;
