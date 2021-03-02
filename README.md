@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/337821512.svg)](https://zenodo.org/badge/latestdoi/337821512)
+
 # Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
@@ -17,13 +19,13 @@ This repository contains the data, models and the MATLAB scripts to inspect and 
 @article{Modenese2021bonedef,
   title={Dependency of Lower Limb Joint Reaction Forces on Femoral Anteversion},
   author={Luca Modenese, Martina Barzan and Christopher P. Carty},
-  journal={Gait & Posture},
-  volume = {submitted},
+  journal={BiorXiv preprint},
+  doi = {https://doi.org/10.1101/2021.02.22.432159},
   year={2021},
   keywords = {Anteversion, Musculoskeletal modeling, Tibiofemoral contact force, Knee Loading, Femur, Walking}
 }
 ```
-The paper is available [as preprint](/preprint).
+The paper is available [as preprint](https://biorxiv.org/cgi/content/short/2021.02.22.432159v1).
 
 # Brief summary of the publication
 
