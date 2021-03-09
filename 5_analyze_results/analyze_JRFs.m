@@ -5,7 +5,7 @@
 % ----------------------------------------------------------------------- %
 % this scripts analyse the changes in JRFs due to changes in femoral
 % anteversion and compares the joint reaction forces at the knee joint with
-% those meaasured by the eTibia.
+% those measured by the eTibia.
 % The comparison is done against force MAGNITUDES, i.e. all components of
 % force computed by the JRFs and measured by the eTibia are considered.
 %
