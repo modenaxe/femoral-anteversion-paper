@@ -22,16 +22,10 @@ addpath(genpath('../../opensim-pipelines/Dynamic_pipeline/Matlab_pipeline_functi
 
 %========== SUBJECTS ======================
 % model names
-subj_set = {'GC5_FemAntev-2Deg',...
-            'GC5_FemAntev5Deg',...
-            'GC5_FemAntev12Deg',...
-            'GC5_FemAntev19Deg',...
-            'GC5_FemAntev26Deg',...
-            'GC5_FemAntev33Deg',...
-            'GC5_FemAntev40Deg'};
+subj_set = {'GC5_FemAntev40Deg', 'GC5_FemAntev40Deg_scaled'};
 
 % folder where to get the Mat summaries
-mat_summary_folder =  './Results_Mat_Summaries';
+mat_summary_folder =  './Mat_Summaries_MuscleParams_sims';
 
 % list of fields to retrieve the JRF from the summaries
 JRF_set = {'hip_JRF', 'knee_JRF', 'ankle_JRF'};
@@ -64,7 +58,7 @@ for joint = 1:length(JRF_set)
         var = getValueColumnForHeader(JRF, cur_jr_name);
         JR_gait_trials = squeeze(var);
 
-        if strcmp(cur_model, 'GC5_FemAntev12Deg') == 1
+        if strcmp(cur_model, 'GC5_FemAntev40Deg') == 1
             ref_ind = n_antev;
         end
 
@@ -123,14 +117,15 @@ for n_antev = 1:length(subj_set)
     y = eTibia_trials_totForce;
     yfit = sims_KneeForce(:,:,n_antev);
     % Compute the residual values:
-    yresid = y - yfit;
+    yresid = y - yfit; % 101 x 5
     % Square the residuals and total them to obtain the residual sum of squares:
-    SSresid = sum(yresid.^2);
+    SSresid = sum(yresid.^2); % 101 x 5
     % Compute the total sum of squares of y by multiplying the variance of y by the number of observations minus 1:
-    SStotal = (length(y)-1) * var(y);
+    SStotal = var(y) * (length(y)-1);
     % Compute R2 using the formula:
     rsq(n_antev,:) = 1 - SSresid./SStotal;
 end
+
 % mean and std
 mean_rsq = mean(rsq,2);
 std_rsq = std(rsq,0,2);
@@ -190,7 +185,7 @@ mean_error_peak2 = mean(abs_error_peak2,2);
 std_error_peak2 = std(abs_error_peak2,0,2);
 
 % table of results
-col_var = {'FemAntev-2'; 'FemAntev+5'; 'FemAntev+12 (nominal)'; 'FemAntev+19'; 'FemAntev+26'; 'FemAntev+33'; 'FemAntev+40'};
+col_var = {'FemAntev+40'; 'FemAntev+40_scaled'};
 results_table = table(col_var, mean_hip_var, std_hip_var, mean_knee_var, std_knee_var, mean_ankle_var, std_ankle_var,...
                         mean_error_peak1,  std_error_peak1, mean_error_peak2, std_error_peak2, mean_RMSE, std_RMSE, mean_rsq, std_rsq, mean_corr_coeff, std_corr_coeff, ...
                    'VariableNames',{'Femoral Anteversion Angle', 'Mean var (HIP) [%]', 'STD hip','Mean var (KNEE) [%]', 'STD knee', 'Mean var (ANKLE) [%]', 'STD ankle',...
@@ -200,4 +195,4 @@ results_table = table(col_var, mean_hip_var, std_hip_var, mean_knee_var, std_kne
 disp(results_table)
 
 % saving table
-writetable(results_table, 'table_results.xls')
+writetable(results_table, 'table_results_scaled_mus_sims.xls')
