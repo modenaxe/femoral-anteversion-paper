@@ -114,8 +114,5 @@ for j = 1:length(JRF_set)
 end
 
 set(gcf,'PaperPositionMode','Auto');
-saveas(gcf, fullfile(figure_folder, 'JRF_dependency.fig'));
-
-% saveas(gcf, fullfile(figure_folder,'JRF_dependency.emf'));
-% saveas(gcf, fullfile(figure_folder,'JRF_dependency.png'));
-% saveas(H_JMom, fullfile(figure_folder,'Figure5_kinetics_comparison.png'));
+saveas(gcf, fullfile(figure_folder, 'JRF_muscle_params.fig'));
+saveas(gcf, fullfile(figure_folder, 'JRF_muscle_params.png'));
