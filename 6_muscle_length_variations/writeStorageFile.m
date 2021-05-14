@@ -1,8 +1,8 @@
-%__________________________________________________________________________
-% Author: Luca Modenese, May 2014
-% email: l.modenese@griffith.edu.au
-%__________________________________________________________________________
-%
+%-------------------------------------------------------------------------%
+%    Copyright (c) 2021 Modenese L.                                       %
+%    Author:   Luca Modenese,  2021                                       %
+%    email:    l.modenese@imperial.ac.uk                                  %
+% ----------------------------------------------------------------------- %
 
 function writeStorageFile(data_struct, sto_file, str_data_description)
 

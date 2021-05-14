@@ -14,7 +14,8 @@
 % somehow on the assumed split of knee loadings, i.e. on the interval used
 % to search for peaks (see variable: peak2_split).
 % ----------------------------------------------------------------------- %
-
+% NB: DUPLICATED from folder 5_analyze_results
+% ----------------------------------------------------------------------- %
 clear;clc; fclose all;close all;
 % add functions
 addpath(genpath('./MatlabFunctions_MSK'));

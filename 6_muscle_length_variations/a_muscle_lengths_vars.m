@@ -1,3 +1,12 @@
+%-------------------------------------------------------------------------%
+%    Copyright (c) 2021 Modenese L.                                       %
+%    Author:   Luca Modenese,  2021                                       %
+%    email:    l.modenese@imperial.ac.uk                                  %
+% ----------------------------------------------------------------------- %
+% This script computes how much the musculotendon lengths are changing in
+% the default pose of the OpenSim models that have been created with the
+% bone deformation tool.
+% ----------------------------------------------------------------------- %
 clear;clc
 
 % import libraries
