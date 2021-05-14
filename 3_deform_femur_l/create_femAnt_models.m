@@ -77,8 +77,7 @@ for cur_fem_ant_angle = fem_ant_angle_set
     % deforming muscle attachments
     osimModel = applyTorsionToMuscleAttachments(osimModel, bone_to_deform, torsionAxis, torsion_angle_func_rad);
     
-    % if there are markers rotate them
-    osimModel = applyTorsionToMarkers(osimModel, bone_to_deform, torsionAxis, torsion_angle_func_rad);
+    % no marker torsion in this study (see main tool for that).
     
     % deform the bone geometries of the generic model
     osimModel = applyTorsionToVTPBoneGeom(osimModel, bone_to_deform, torsionAxis, torsion_angle_func_rad, torsion_doc_string, OSGeometry_folder);

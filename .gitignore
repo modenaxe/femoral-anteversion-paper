@@ -29,6 +29,8 @@ bone_datasets/
 OpenSim_models/
 docs/*.html
 docs/*.m
+6_muscle_length_variations/ScaledMuscleParams_sims
+6_muscle_length_variations/c_runSims_scaled_muscles.m
 
 *.zip
 /*_safe/

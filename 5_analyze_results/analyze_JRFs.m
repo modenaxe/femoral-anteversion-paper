@@ -3,15 +3,24 @@
 %    Author:   Luca Modenese,  2021                                       %
 %    email:    l.modenese@imperial.ac.uk                                  %
 % ----------------------------------------------------------------------- %
+% this scripts analyse the changes in JRFs due to changes in femoral
+% anteversion and compares the joint reaction forces at the knee joint with
+% those measured by the eTibia.
+% The comparison is done against force MAGNITUDES, i.e. all components of
+% force computed by the JRFs and measured by the eTibia are considered.
+%
+% LIMITATION:
+% the eTibia measurements are not clearly double-peaked, so results depend
+% somehow on the assumed split of knee loadings, i.e. on the interval used
+% to search for peaks (see variable: peak2_split).
+% ----------------------------------------------------------------------- %
+
 clear;clc; fclose all;close all;
 % add functions
 addpath(genpath('./MatlabFunctions_MSK'));
 addpath(genpath('../../opensim-pipelines/Dynamic_pipeline/Matlab_pipeline_functions'))
 
-% %========== SUBJECTS ======================
-% root folder for placing the folders for each subject
-database_root_folder = [pwd,'/2_Dataset'];
-
+%========== SUBJECTS ======================
 % model names
 subj_set = {'GC5_FemAntev-2Deg',...
             'GC5_FemAntev5Deg',...
@@ -77,11 +86,12 @@ load('eTibia_data.mat')
 BW = 75*9.81;
 
 % EXP DATA: eTibia total force [frames x trials] 
+% trials order in eTibia mat file: [1, 11, 3, 8, 9]
 eTibia_trials_totForce = squeeze(eTibia_data.GC5.ngait_og.data(:,3,:))/BW;
 
 % SIM DATA: extract KJC and reorder them as in eTibia [frames x trials x femAntev]
 % trials (second dimension) are adjusted to be in the same order as eTibia
-% no_gait 1 (order: 11 - 1 - 3 - 8 -9)
+% trials order in Summary Mat files from sims [11, 1, 3, 8, 9]
 sims_KneeForce = squeeze(all_sims_JRFs(:,[2,1,3:end], : ,2));
 
 % absolute error for each frame
@@ -107,7 +117,7 @@ mean_corr_coeff = mean(R1)';
 std_corr_coeff = std(R1)';
 mean_p_val = mean(P1)';
 
-%% R square for each trial
+%% R square for each trial (https://en.wikipedia.org/wiki/Coefficient_of_determination)
 for n_antev = 1:length(subj_set)
     % 1 - sum_sq_resid / sum_sq_total
     y = eTibia_trials_totForce;
