@@ -20,10 +20,7 @@ clear;clc; fclose all;close all;
 addpath(genpath('./MatlabFunctions_MSK'));
 addpath(genpath('../../opensim-pipelines/Dynamic_pipeline/Matlab_pipeline_functions'))
 
-% %========== SUBJECTS ======================
-% root folder for placing the folders for each subject
-database_root_folder = [pwd,'/2_Dataset'];
-
+%========== SUBJECTS ======================
 % model names
 subj_set = {'GC5_FemAntev-2Deg',...
             'GC5_FemAntev5Deg',...
@@ -120,7 +117,7 @@ mean_corr_coeff = mean(R1)';
 std_corr_coeff = std(R1)';
 mean_p_val = mean(P1)';
 
-%% R square for each trial
+%% R square for each trial (https://en.wikipedia.org/wiki/Coefficient_of_determination)
 for n_antev = 1:length(subj_set)
     % 1 - sum_sq_resid / sum_sq_total
     y = eTibia_trials_totForce;
