@@ -19,13 +19,13 @@ This repository contains the data, models and the MATLAB scripts to inspect and 
 @article{Modenese2021bonedef,
   title={Dependency of Lower Limb Joint Reaction Forces on Femoral Anteversion},
   author={Luca Modenese, Martina Barzan and Christopher P. Carty},
-  journal={BiorXiv preprint},
-  doi = {https://doi.org/10.1101/2021.02.22.432159},
+  journal={Gait & Posture},
+  doi = {https://doi.org/10.1016/j.gaitpost.2021.06.014},
   year={2021},
-  keywords = {Anteversion, Musculoskeletal modeling, Tibiofemoral contact force, Knee Loading, Femur, Walking}
+  keywords = {Femoral version, Femoral anteversion, Musculoskeletal modeling, Tibiofemoral contact force, Knee Loading, Femur, Walking}
 }
 ```
-The paper is available [as preprint](https://biorxiv.org/cgi/content/short/2021.02.22.432159v1).
+The paper is available open access at this [link](https://doi.org/10.1016/j.gaitpost.2021.06.014).
 
 # Brief summary of the publication
 
@@ -93,6 +93,3 @@ Other MATLAB scripts included in the repository are dependent functions.
 * All input, output and setup files required to run the simulations are provided, but not the workflow employed for running the simulations.
 * Using the setup files might require adjusting the input/output folders to your local setup.
 
-# Future work
-
-* Upgrade scripts to openSim 4.x.
