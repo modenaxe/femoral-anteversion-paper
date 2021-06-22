@@ -167,11 +167,13 @@ second_knee_peaks_sims = squeeze(max(sims_KneeForce(peak2_split:end,:,:)))';
 
 % check plotting
 if debug_plots == 1
-    plot(eTibia_trials_totForce, 'k'); hold on
+    plot(eTibia_trials_totForce, 'r'); hold on
     plot(ind_p1, first_peaks_etibia, 'rs' );
     plot(peak2_split+ind_p2-1, second_peaks_etibia, 'rx' );
-    xlim([0 100]); xlabel('Gait Cycle [%]')
-    ylim([0 2.5]);    ylabel('Joint Reaction Forces [BW]')
+    AxisFontSize = 16; 
+    AxisFontWeight = 'normal';
+    xlim([0 100]); xlabel('Gait Cycle [%]','FontWeight',AxisFontWeight,'FontSize',AxisFontSize,'FontName','Arial')
+    ylim([0 2.5]);    ylabel('Measured Knee Loads [BW]','FontWeight',AxisFontWeight,'FontSize',AxisFontSize,'FontName','Arial')
     title('Peaks check')
 end
 
