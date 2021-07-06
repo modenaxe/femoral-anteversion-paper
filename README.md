@@ -88,6 +88,8 @@ The provided MATLAB scripts allow the reader to reproduce the results and figure
 | `plot_JRFs.m` | plots the joint reaction forces obtained from simulations with models having different femoral anteversion. | Figure 2. |
 | `analyze_JRFs.m` | runs basic analyses on the joint reaction forces resulting from the simulations. | Table 1 |
 | `a_muscle_lengths_vars.m` | computes the length of the musculotendon paths and their percentage differences with respect to the baseline model. | Appendix B |
+
+
 Other MATLAB scripts included in the repository are dependent functions.
 
 # Limitations and notes about reproducibility
