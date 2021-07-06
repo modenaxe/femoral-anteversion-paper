@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/337821512.svg)](https://zenodo.org/badge/latestdoi/337821512)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5076232.svg)](https://doi.org/10.5281/zenodo.5076232)
 
 # Table of contents <!-- omit in toc -->
 
