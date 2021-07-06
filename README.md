@@ -8,7 +8,6 @@
 - [Resources included in this repository](#resources-included-in-this-repository)
 - [Available MATLAB scripts](#available-matlab-scripts)
 - [Limitations and notes about reproducibility](#limitations-and-notes-about-reproducibility)
-- [Future work](#future-work)
 
 
 # Overview
@@ -30,10 +29,11 @@ The paper is available open access at this [link](https://doi.org/10.1016/j.gait
 # Brief summary of the publication
 
 In our manuscript: 
-* We presented a MATLAB tool for applying torsional profiles to the bones of generic musculoskeletal models in OpenSim format. This tool is openly developed [at this link](https://github.com/modenaxe/msk_bone_deformation).
-* We investigated how the joint reaction forces in a musculoskeletal model of the lower limb change when the femoral anteversion of that model is modified.
-* We assessed the results of our simulations against the in vivo measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5. </br>
-
+* We presented a MATLAB tool for applying torsional profiles to the bones of generic musculoskeletal models in OpenSim format. This tool is openly developed [at this link](https://github.com/modenaxe/msk-bone-deformation).
+* We investigated how the joint reaction forces in a musculoskeletal model of the lower limb change when the femoral version of that model is modified.
+* We assessed the results of our simulations against the _in vivo_ measurements of knee loads available at https://simtk.org/projects/kneeloads for patient 5, to identify the most accurate models.
+* We found that the most accurate models were those with anteversion angle closer to that of the actual femur of the considered subject.</br>
+  
 ![paper_overview](/images/paper_results.png)
 
 # Requirements and setup
@@ -87,11 +87,11 @@ The provided MATLAB scripts allow the reader to reproduce the results and figure
 | `save_mat_summaries.m` | converts the simulation results in a format usable for further analyses. | N/A |
 | `plot_JRFs.m` | plots the joint reaction forces obtained from simulations with models having different femoral anteversion. | Figure 2. |
 | `analyze_JRFs.m` | runs basic analyses on the joint reaction forces resulting from the simulations. | Table 1 |
-
+| `a_muscle_lengths_vars.m` | computes the length of the musculotendon paths and their percentage differences with respect to the baseline model. | Appendix B |
 Other MATLAB scripts included in the repository are dependent functions.
 
 # Limitations and notes about reproducibility
 
-* All input, output and setup files required to run the simulations are provided, but not the workflow employed for running the simulations.
-* Using the setup files might require adjusting the input/output folders to your local setup.
+* All input, output and setup files required to run the simulations are provided, with the exception of the workflow employed for running the simulations in batch.
+* Using the provided OpenSim setup files might require adjusting the input/output folders to your local setup.
 
