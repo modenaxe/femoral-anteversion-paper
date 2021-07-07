@@ -16,7 +16,7 @@ This repository contains the data, models and the MATLAB scripts to inspect and 
 
 ```bibtex
 @article{Modenese2021bonedef,
-  title={Dependency of Lower Limb Joint Reaction Forces on Femoral Anteversion},
+  title={Dependency of Lower Limb Joint Reaction Forces on Femoral Version},
   author={Luca Modenese, Martina Barzan and Christopher P. Carty},
   journal={Gait & Posture},
   doi = {https://doi.org/10.1016/j.gaitpost.2021.06.014},
