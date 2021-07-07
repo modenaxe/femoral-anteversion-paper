@@ -19,6 +19,8 @@ This repository contains the data, models and the MATLAB scripts to inspect and 
   title={Dependency of Lower Limb Joint Reaction Forces on Femoral Version},
   author={Luca Modenese, Martina Barzan and Christopher P. Carty},
   journal={Gait & Posture},
+  volume = {88},
+  pages = {318-321},
   doi = {https://doi.org/10.1016/j.gaitpost.2021.06.014},
   year={2021},
   keywords = {Femoral version, Femoral anteversion, Musculoskeletal modeling, Tibiofemoral contact force, Knee Loading, Femur, Walking}
