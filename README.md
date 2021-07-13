@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
 - [Brief summary of the publication](#brief-summary-of-the-publication)
+- [Video summary of the presentation](#video-summary-of-the-presentation)
 - [Requirements and setup](#requirements-and-setup)
 - [Resources included in this repository](#resources-included-in-this-repository)
 - [Available MATLAB scripts](#available-matlab-scripts)
@@ -35,6 +36,12 @@ In our manuscript:
 * We found that the most accurate models were those with anteversion angle closer to that of the actual femur of the considered subject.</br>
   
 ![paper_overview](/images/paper_results.png)
+
+# Video summary of the presentation
+
+Luca gave a talk at the 26th meeting of the European Society of Biomechanics presenting this work. The recorded presentation is available at the following link
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jq2S2tRGsm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Requirements and setup
 
