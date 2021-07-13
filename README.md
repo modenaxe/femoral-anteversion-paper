@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5076232.svg)](https://doi.org/10.5281/zenodo.5076232)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5076232.svg)](https://doi.org/10.5281/zenodo.5076232) ![visitors](https://visitor-badge.glitch.me/badge?page_id=modenaxe.femoral-anteversion-paper)<!-- omit in toc -->
 
 # Table of contents <!-- omit in toc -->
 
