@@ -41,9 +41,9 @@ In our manuscript:
 
 # Video summary of the presentation
 
-Luca gave a talk at the 26th meeting of the European Society of Biomechanics presenting this work. The recorded presentation is available at the following link
+Luca gave a talk at the [26th Congress of the European Society of Biomechanics]() presenting this work. The recorded presentation is available at the following link
 
-[![Alt text](images/youtube_thumbnail)](https://www.youtube.com/watch?v=jq2S2tRGsm0)
+[![Alt text](images/youtube_thumbnail.png)](https://www.youtube.com/watch?v=jq2S2tRGsm0)
 
 # Requirements and setup
 
