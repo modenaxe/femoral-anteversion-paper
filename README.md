@@ -41,7 +41,7 @@ In our manuscript:
 
 # Video summary of the publication
 
-Luca gave a talk at the [26th Congress of the European Society of Biomechanics]() presenting this work. The recorded presentation is available at the following link
+Luca gave a talk at the [26th Congress of the European Society of Biomechanics](https://bit.ly/3yU6EwB) presenting this work. The recorded presentation is available at the following link
 
 [![Alt text](images/youtube_thumbnail.png)](https://www.youtube.com/watch?v=jq2S2tRGsm0)
 
