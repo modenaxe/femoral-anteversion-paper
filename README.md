@@ -4,7 +4,7 @@
 
 - [Overview](#overview)
 - [Brief summary of the publication](#brief-summary-of-the-publication)
-- [Video summary of the presentation](#video-summary-of-the-presentation)
+- [Video summary of the publication](#video-summary-of-the-publication)
 - [Requirements and setup](#requirements-and-setup)
 - [Resources included in this repository](#resources-included-in-this-repository)
 - [Available MATLAB scripts](#available-matlab-scripts)
@@ -39,7 +39,7 @@ In our manuscript:
   
 ![paper_overview](/images/paper_results.png)
 
-# Video summary of the presentation
+# Video summary of the publication
 
 Luca gave a talk at the [26th Congress of the European Society of Biomechanics]() presenting this work. The recorded presentation is available at the following link
 
