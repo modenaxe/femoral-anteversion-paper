@@ -43,7 +43,7 @@ In our manuscript:
 
 Luca gave a talk at the 26th meeting of the European Society of Biomechanics presenting this work. The recorded presentation is available at the following link
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jq2S2tRGsm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Alt text](images/youtube_thumbnail)](https://www.youtube.com/watch?v=jq2S2tRGsm0)
 
 # Requirements and setup
 
